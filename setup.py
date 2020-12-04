@@ -13,8 +13,10 @@ def url_to_list(url):
         file.write(blocklist)
 
 
-def add_to_blocklist():
-    pass
+def read_url_list(url_list):
+    """Reads urls from thr source url_list."""
+    with open('Source_list.txt', r) as file:
+        file.read()
 
 
 if __name__ == '__main__':
