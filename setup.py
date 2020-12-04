@@ -3,12 +3,19 @@ import html5lib
 import requests
 
 def url_to_list(url):
-    # URL = "https://mirror1.malwaredomains.com/files/justdomains"
-    r = requests.get(url)
-    block_list = BeautifulSoup(r.content, 'html5lib') 
+    """Creates new txt file from given url."""
 
-    with open('Ultimate_block_list.txt', 'w') as file:
-        file.write(block_list.prettify())
+    res = requests.get(url)
+    soup = BeautifulSoup(res.content, 'html5lib')
+    blocklist = soup.body.text
+
+    with open('Ultimate_blocklist.txt', 'w') as file:
+        file.write(blocklist)
+
+
+def add_to_blocklist():
+    pass
+
 
 if __name__ == '__main__':
-    url_to_list(https://mirror1.malwaredomains.com/files/justdomains)
+    url_to_list('https://mirror1.malwaredomains.com/files/justdomains')

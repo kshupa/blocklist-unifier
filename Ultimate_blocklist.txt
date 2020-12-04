@@ -1,8 +1,4 @@
-<html>
- <head>
- </head>
- <body>
-  amazon.co.uk.security-check.ga
+amazon.co.uk.security-check.ga
 autosegurancabrasil.com
 dadossolicitado-antendimento.sad879.mobi
 hitnrun.com.my
@@ -26857,5 +26853,3 @@ siambiznews.com
 lp.searchmulty.com
 usibw.top
 leanproconsulting.com.br
- </body>
-</html>
